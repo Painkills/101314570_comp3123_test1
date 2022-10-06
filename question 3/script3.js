@@ -3,9 +3,7 @@ var path = require("path")
 
 const DIRECTORY = "Logs"
 const EXTENSION = ".txt"
-// fs.readFile((DIRECTORY + "log0" + EXTENSION), 'utf8', function(err, data) {
-//     console.log(data)
-// })
+
 
 function dealWithLogs(){
     fs.readdir(DIRECTORY, 'utf-8', function(error, files) {

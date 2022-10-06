@@ -5,11 +5,11 @@ const resolvedPromise = () => {
     myResolvedPromise = new Promise((res, rej) => {
         if (isResolvable) {
             setTimeout(() => {
-                res("message: 'delayed success'")
+                res({message: 'delayed success'})
             }, 500)
             
         } else {
-            rej("message: 'bad things happened'")
+            rej({error: 'bad things happened'})
         }
     })
 
@@ -26,12 +26,12 @@ const rejectedPromise = () => {
     myRejectedPromise = new Promise((res, rej) => {
         if (isResolvable) {
             setTimeout(() => {
-                res("message: 'delayed success!'")
+                res({message: 'delayed success!'})
             }, 500)
             
         } else {
             setTimeout(() => {
-                rej("message: 'delayed exception!'")
+                rej({error: 'delayed exception!'})
             }, 500)
             
         }

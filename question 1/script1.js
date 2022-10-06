@@ -27,4 +27,5 @@ function lowerCaseWords(array) {
         err => console.log(err)
     )
 }
-lowerCaseWords(['Pizza', 10, true, 25, false, "AEFQ"])
+lowerCaseWords(['Pizza', 10, true, 25, false, 'AEFQ'])
+lowerCaseWords([10, true, 25, false])
